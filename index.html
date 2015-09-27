@@ -1,0 +1,43 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+<title>Silicon Valley, A place where things happen.</title>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/style.css" />
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn98CRNN7konQ1eE4pikvyQD3PD7EOhmU"></script>
+</head>
+
+<body>
+
+	<div id = "map">
+	</div>
+
+    <div id="options">
+        <ul data-bind="foreach: venues" id="list">
+            <li data-bind="text:venueName, click: $parent.setMarker"></li>
+        </ul>
+
+        <form id="searchBar">
+            <h1 id="searchTitle">
+                Toronto Highlights
+            </h1>
+            <input id="searchInput" data-bind="value: query" placeholder="Search..." autofocus />
+            <button id="searchBtn" type="submit">
+                <span class="glyphicon glyphicon-search"></span>
+            </button>
+            <p id="searchNumber">
+                <span data-bind="text: numVenues"></span>
+                Venues
+            </p>
+        </form>
+    </div>
+</body>
+	<script src="lib/jquery-1.11.3.min.js" ></script>
+	<script src="lib/bootstrap.min.js" ></script>
+	<script src="lib/knockout-3.3.0.js" ></script>
+    <script src="js/Venues.js"></script>
+	<script src="js/js.js" ></script>
+</html>

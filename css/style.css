@@ -1,0 +1,32 @@
+/* My CSS Style */
+
+html, body {
+    height:100%;
+    margin:0;
+    padding:0;
+}
+
+#map {
+    height: 100%; 
+}
+
+#list {
+    left:0px;
+    top:15%;
+    position:absolute;
+    background-color: rgba(128, 128, 128,0.8);
+    z-index:10;
+    list-style:none;
+    padding:10px;
+}
+
+#searchBar {
+    left:0px;
+    top:0px;
+    position:absolute;
+    height:15%;
+    background-color: rgba(128, 128, 128,0.8);
+    z-index:10;
+    list-style:none;
+    padding:10px;
+}
