@@ -12,21 +12,38 @@ html, body {
 
 #list {
     left:0px;
-    top:15%;
+    top:20%;
     position:absolute;
     background-color: rgba(128, 128, 128,0.8);
     z-index:10;
     list-style:none;
     padding:10px;
+    overflow-y:scroll;
+    max-height:50%;
 }
 
 #searchBar {
     left:0px;
     top:0px;
     position:absolute;
-    height:15%;
+    height:20%;
     background-color: rgba(128, 128, 128,0.8);
     z-index:10;
     list-style:none;
     padding:10px;
+}
+
+@media (max-width:700px)
+{
+    #list {
+        width:100%;
+        height:30%;
+        text-align:center;
+    }
+
+    #searchBar {
+        width:100%;
+        text-align:center;
+    }
+
 }

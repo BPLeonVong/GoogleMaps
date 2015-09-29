@@ -1,0 +1,1 @@
+#map,body,html{height:100%}#list,#searchBar{left:0;position:absolute;background-color:rgba(128,128,128,.8);z-index:10;list-style:none;padding:10px}body,html{margin:0;padding:0}#list{top:20%;overflow-y:scroll;max-height:50%}#searchBar{top:0;height:20%}@media (max-width:700px){#list,#searchBar{width:100%;text-align:center}#list{height:30%}}

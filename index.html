@@ -5,8 +5,8 @@
 <title>Silicon Valley, A place where things happen.</title>
 	<meta charset="UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<link rel="stylesheet" href="css/bootstrap.min.css" />
-	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="lib/bootstrap.min.css" />
+	<link rel="stylesheet" href="dist/css/style.min.css" />
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDn98CRNN7konQ1eE4pikvyQD3PD7EOhmU"></script>
 </head>
 
@@ -16,11 +16,11 @@
 	</div>
 
     <div id="options">
-        <ul data-bind="foreach: venues" id="list">
+        <ul data-bind="foreach: filteredVenueList, as: 'venues'" id="list">
             <li data-bind="text:venueName, click: $parent.setMarker"></li>
         </ul>
 
-        <form id="searchBar">
+        <form id="searchBar" data-bind="submit: search">
             <h1 id="searchTitle">
                 Toronto Highlights
             </h1>
@@ -34,10 +34,7 @@
             </p>
         </form>
     </div>
+    <script src="dist/js/ILib.min.js"></script>
+    <script src="dist/js/IJava.min.js"></script>
 </body>
-	<script src="lib/jquery-1.11.3.min.js" ></script>
-	<script src="lib/bootstrap.min.js" ></script>
-	<script src="lib/knockout-3.3.0.js" ></script>
-    <script src="js/Venues.js"></script>
-	<script src="js/js.js" ></script>
 </html>

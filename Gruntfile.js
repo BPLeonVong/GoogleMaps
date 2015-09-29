@@ -24,7 +24,17 @@
             },
             build: {
                 files: {
-                    'dist/js/IJava.min.js': 'src/js/*.js'
+                    'dist/js/IJava.min.js':
+                        [   'src/js/Venues.js',
+                            'src/js/map.js',
+                            'src/js/searchFunction.js',
+                            'src/js/js.js'],
+                    
+                    /*'dist/js/ILib.min.js':
+                        [   'lib/jquery-1.11.3.min.js',
+                            'lib/bootstrap.min.js',
+                            'lib/knockout-3.3.0.js',
+                            'lib/markerclusterer_compiled.js']*/
                 }
             }
         },

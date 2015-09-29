@@ -68,12 +68,16 @@
         center: location,
         mapTypeControlOptions: {
             mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'usroadatlas']
-        }
-    }
+        },
+        mapTypeControl: false,
+        panControl: false,
+        streetViewControl: false,
+        zoomControl: false
+    };
     map = new google.maps.Map(divElement, mapOptions);
     var styledMapOptions = {};
     var usRoadMapType = new google.maps.StyledMapType(roadAtlasStyles, styledMapOptions);
     map.mapTypes.set('usroadatlas', usRoadMapType);
     map.setMapTypeId('usroadatlas');
     return map;
-}
+};
